@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=7m0Kn6POqQc
+
+
+C:\Program Files\Android\Android Studio\bin > studio64.exe
+ cd "C:\Nithiya's Stuff\Academics\NUS\MSc Digital Fintech\Semester 1\IT5007 - Software Engineering on Application Architecture\Tutorial\A0242702R_Tutorial6_IT5007\Client"
+
+npx react-native run-android
+
+https://stackoverflow.com/questions/48298910/react-native-java-home-is-not-set-and-no-java-command-could-be-found-in-your
+
+C:\Users\Nithiya\AppData\Local\Android\Sdk
+
+Get-ChildItem -Path Env:\
+ANDROID_HOME
+
+https://reactnative.dev/docs/environment-setup
