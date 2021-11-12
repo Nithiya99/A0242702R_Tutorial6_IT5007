@@ -21,14 +21,16 @@ const getWaitListQuery = gql`
   }
 `;
 
-const Item = ({title, hp, ts}) => (
+const Item = ({name, hp, ts}) => (
   <View style={styles.item}>
     <Text style={styles.title}>
-      {title}
-      {'\n'}
-      {hp}
-      {'\n'}
-      {ts}
+      <Text style={{color: '#000000'}}>
+        Name: {name}
+        {'\n'}
+        HP: {hp}
+        {'\n'}
+        Time stamp: {ts}
+      </Text>
     </Text>
   </View>
 );
@@ -41,11 +43,13 @@ const WaitList = props => {
   if (loading) return <Text>Loading...</Text>;
   if (error) return <Text>Error loading books feed </Text>;
   const renderItem = ({item}) => (
-    <Item title={item.name} hp={item.hp} ts={item.timestamp} />
+    <Item name={item.name} hp={item.hp} ts={item.timestamp} />
   );
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{fontSize: 40}}>Reservations List</Text>
+      <Text style={{fontSize: 38, fontWeight: 'bold', color: '#000000'}}>
+        Reservations List
+      </Text>
       <FlatList
         data={data.customers}
         renderItem={renderItem}
@@ -61,7 +65,7 @@ const styles = StyleSheet.create({
   //   marginTop: StatusBar.currentHeight || 0,
   // },
   item: {
-    backgroundColor: '#f9c2ff',
+    backgroundColor: '#8FD5A6',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
