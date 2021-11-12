@@ -12,5 +12,3 @@ C:\Users\Nithiya\AppData\Local\Android\Sdk
 
 Get-ChildItem -Path Env:\
 ANDROID_HOME
-
-https://reactnative.dev/docs/environment-setup
