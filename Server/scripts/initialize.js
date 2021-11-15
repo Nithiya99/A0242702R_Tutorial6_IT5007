@@ -13,13 +13,31 @@ const issuesDB = [
     _id: 2,
     name: "Nithiya",
     hp: "87171086",
-    timestamp: new Date("October 30, 2021 23:15:30").toString(),
+    timestamp: new Date("October 30, 2021 23:16:30").toString(),
   },
 
   {
     _id: 3,
     name: "Gary",
     hp: "985421365",
+    timestamp: new Date("October 30, 2021 23:17:30").toString(),
+  },
+  {
+    _id: 4,
+    name: "Lisa",
+    hp: "97451236",
+    timestamp: new Date("October 30, 2021 23:18:30").toString(),
+  },
+  {
+    _id: 5,
+    name: "Hobbie",
+    hp: "96458785",
+    timestamp: new Date("October 30, 2021 23:19:30").toString(),
+  },
+  {
+    _id: 6,
+    name: "Mark",
+    hp: "87452365",
     timestamp: new Date("October 30, 2021 23:15:30").toString(),
   },
 ];
